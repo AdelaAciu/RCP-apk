@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="Tablet"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://Tablet/com.tablet.E4LifeCycle">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/Tablet/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="Tablet">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="Tablet.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="Tablet">
+         <property
+               name="appName"
+               value="Tablet">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
